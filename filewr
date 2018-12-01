@@ -18,7 +18,12 @@ int main()
         fgets(lines, 150, fPointer);
         puts(lines);
     }
-
+    
+    /*
+    fPointer = fopen("jepthegreat.txt", "a");
+    fprint("fPoint", "\n do your work now");
+    */
+    
     fclose(fPointer);
 
     return 0;

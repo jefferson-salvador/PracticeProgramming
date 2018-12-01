@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    char lines[150];
+    FILE * fPointer;
+    
+    /*
+    fPointer = fopen("jepthegreat.txt", "w");
+    fprintf(fPointer, "You can! :D Strive hard!! ");
+    */
+    
+    fPointer = fopen("jepthegreat.txt", "r");
+
+    while(!feof(fPointer)){
+        fgets(lines, 150, fPointer);
+        puts(lines);
+    }
+
+    fclose(fPointer);
+
+    return 0;
+}
